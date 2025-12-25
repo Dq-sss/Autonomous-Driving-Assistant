@@ -56,7 +56,7 @@ shellingham==1.5.4
 six==1.17.0
 sympy==1.13.1
 tokenizers==0.22.1
-torch==2.6.0+cu124
+torch==2.6.0+cu124 
 TorchCodec==0.2.0
 torchvision==0.21.0+cu124
 tqdm==4.67.1
