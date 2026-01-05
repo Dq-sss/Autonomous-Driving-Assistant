@@ -173,8 +173,8 @@ def process_and_augment_data(
 # =========================
 # 6. Qwen-VL-7B 格式转换
 # =========================
-INPUT_JSON = "qwen_finetune_aug_batch_optimized.json"
-OUTPUT_JSON = "qwen_vl7b.json"
+INPUT_JSON = "qwen_finetune.json"
+OUTPUT_JSON = "qwen_vl_7b.json"
 
 
 def extract_text_from_content(content_list):
@@ -268,3 +268,4 @@ if __name__ == "__main__":
         INPUT_JSON,
         OUTPUT_JSON
     )
+
