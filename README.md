@@ -1,11 +1,7 @@
 # Multimodal Vision-Language Assistant for Autonomous Driving Scenarios
 # 基于自动驾驶场景的多模态视觉语言助手
 
-本项目旨在利用多模态大模型 Qwen2.5-VL-7B-Instruct 构建一个自动驾驶场景助手。模
-型通过对交通场景图像的分析理解，识别车辆、行人、信号灯等关键交通要素，并解释其
-对驾驶行为的影响。当用户提出交通状况相关问题，模型可以实时给出交通状况分析以及
-开车决策。本项目包含数据处理、LoRA 微调以及模型效果评估，并基于 Gradio 实现了可
-视化问答交互系统。
+本项目旨在利用多模态大模型 Qwen2.5-VL-7B-Instruct 构建一个自动驾驶场景助手。模型通过对交通场景图像的分析理解，识别车辆、行人、信号灯等关键交通要素，并解释其对驾驶行为的影响。当用户提出交通状况相关问题，模型可以实时给出交通状况分析以及开车决策。本项目包含数据处理、LoRA 微调以及模型效果评估，并基于 Gradio 实现了可视化问答交互系统。
 
 ## 任务描述
 
@@ -80,6 +76,9 @@ pip install -r requirements.txt
 
    注意：请在 `process_data.py` 中修改 `parquet_path` 为你实际的数据路径。
 
+## 整体架构
+
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img1.png)
 
 ## 模型微调 (QLoRA/AdaQLoRA Training)
 
