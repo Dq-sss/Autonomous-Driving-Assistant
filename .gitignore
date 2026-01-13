@@ -1,8 +1,0 @@
-*.safetensors
-*.parquet
-*.lock
-*.metadata# 忽略 HuggingFace 缓存
-.cache/
-.cache
-*/.cache
-output/
