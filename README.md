@@ -76,9 +76,18 @@ pip install -r requirements.txt
 
    注意：请在 `process_data.py` 中修改 `parquet_path` 为你实际的数据路径。
 
-## 整体架构
+
+**CODA-LM数据集共包含三个任务，分别是通用感知、区域感知和驾驶建议，如下图所示。**
 
 ![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img1.png)
+
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img2.png)
+
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img3.png)
+
+## 整体架构
+
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img4.png)
 
 ## 模型微调 (QLoRA/AdaQLoRA Training)
 
@@ -99,6 +108,15 @@ pip install -r requirements.txt
 
    脚本会自动处理图像和文本的 Data Collation，并使用 PEFT 库进行高效微调。
 
+**QLoRA和AdaQLoRA微调模型训练后得到的loss图分别如下图所示。**
+
+QloRA微调loss曲线：
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img5.png)
+
+AdaQloRA微调loss曲线：
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img6.png)
+
+
 ## 推理与评估
 
 
@@ -113,12 +131,20 @@ python metric.py
 和 ROUGE-L。
 
 
+
 ## 交互界面
 
-用Gradio实现问答交互，用户上传当前从自车拍摄的图片，并提出交通决策相关问题，模型进行交通状况分析并回答驾驶决策
+用Gradio实现问答交互，用户上传当前从自车拍摄的图片，并提出交通决策相关问题，模型进行交通状况分析并回答驾驶决策。
 
 ```bash
 python ui.py
 ```
+通用感知、区域感知和驾驶建议这三个任务的问答分别如下面三个图所示。
 
+
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img7.png)
+
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img8.png)
+
+![示例图片](https://github.com/Dq-sss/Autonomous-Driving-Assistant/blob/main/images/img9.png)
 
