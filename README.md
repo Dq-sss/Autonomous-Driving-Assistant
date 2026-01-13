@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 2. **运行数据处理脚本**
 
-   该脚本会读取 Parquet 文件，将图片提取到指定路径下的 `converted_images/` 目录，并生成训练所需的 JSON 数据，保存为 qwen_finetune.json 。
+   该脚本会读取 Parquet 文件，将图片提取到指定路径下的 `converted_images/` 目录，并生成训练所需的 JSON 数据，保存为 qwen_vl_7b.json 。
 
    ```bash
    python process_data.py
