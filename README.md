@@ -3,6 +3,8 @@
 
 本项目旨在利用多模态大模型 Qwen2.5-VL-7B-Instruct 构建一个自动驾驶场景助手。模型通过对交通场景图像的分析理解，识别车辆、行人、信号灯等关键交通要素，并解释其对驾驶行为的影响。当用户提出交通状况相关问题，模型可以实时给出交通状况分析以及开车决策。本项目包含数据处理、LoRA 微调以及模型效果评估，并基于 Gradio 实现了可视化问答交互系统。
 
+详细pdf报告：https://github.com/Dq-sss/LLM-Course/blob/main/LLM-Course-Assignments-2025/02-Multimodal/submissions/SX2516008-%E6%88%B4%E5%80%A9-02-Multimodal.pdf
+
 ## 任务描述
 
 模型的主要任务是分析自车视角的交通图像，关注以下七类物体：
